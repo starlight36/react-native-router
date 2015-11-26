@@ -42,7 +42,7 @@ var NavBarContainer = React.createClass({
   // We render both the current and the previous navbar (for animation)
   render: function() {
     return (
-      <View style={styles.navbarContainer}>
+      <View style={this.props.navbarContainerStyle}>
         <NavBarContent 
           route={this.state.previousRoute}
           style={this.props.style}
